@@ -5,7 +5,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Test Jenkin'
-                git 'https://github.com/mhnguyen034/todolist.git'
+                git branch: 'main', url: 'https://github.com/mhnguyen034/todolist.git'
             }
         }
     }
